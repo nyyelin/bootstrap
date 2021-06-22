@@ -1,0 +1,103 @@
+.learningbackgroundimage {
+	/*background-image: url('../image/banner.jpg');*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
+	/*background-position: center;*/
+	background-color:darkgray;
+	height: auto;
+}
+
+i {
+	font-style: normal;
+	font-weight: bold;
+	font-family: poppin!important;
+}
+
+.learningbannerimage .image{
+	width:auto;
+	height: 110px;
+	margin-top: 40px;
+}
+.learningbannerimage>img{
+	width: 100%;
+	height: 100%;
+}
+.learningbannertext{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	margin-top: 40px;
+	position: relative;
+
+	/*margin-right: 500px;*/
+
+}
+.learningbannertext p{
+	text-align: center;
+	color: white;
+	text-align:left;
+	margin-left: -30px;
+	color: #000200c4;
+}
+
+.learningtext1{
+	margin: 20px;
+	font-weight: 500;
+}
+
+.learningbannertext .learningtext{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 650;
+}
+.learningbtn{
+	margin-bottom: 20px;
+	margin-left: -30px; 
+	margin-top: 20px;
+}
+
+.learningbtn1{
+	margin-bottom: 30px;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.learningbannertext p{
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.learningbtn{
+		margin-left: 0px;
+	}
+
+	.learningbtn1{
+		text-align: center;
+	}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.learningbannertext p{
+		margin-left: 0px;
+		text-align: center;
+	}
+	.learningbtn{
+		margin-left: 0px;
+	}
+
+	.learningbtn1{
+		text-align: center;
+	}
+}
+
+@media (min-width: 320px){
+	.learningbtn{
+		margin-bottom: 20px;
+	}
+}
+.learningtutorial{
+	margin-top: 20px;
+}
+
+
+.border1{
+	border-right: 1px dashed #a5efe4;
+
+}

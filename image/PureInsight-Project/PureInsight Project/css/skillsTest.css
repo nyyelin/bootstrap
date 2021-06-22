@@ -1,0 +1,54 @@
+.myunderline {
+    border-bottom: 2px solid rgb(236, 130, 44);
+    transition-property: color;
+    transition-delay: 0.1s;
+}
+
+.myunderline:hover {
+    cursor: default;
+    color: rgb(219, 216, 216) !important;
+}
+
+.mylink {
+    color: rgb(236, 130, 44);
+}
+
+.mylink:hover {
+    color: rgb(236, 130, 44);
+}
+
+.html {
+    color: rgb(250, 98, 98);
+}
+
+.css {
+    color: rgb(98, 245, 250);
+}
+
+.js {
+    color: rgb(250, 227, 98);
+}
+
+.jquery {
+    color: rgb(98, 113, 250);
+}
+
+.bootstrap {
+    color: rgb(225, 98, 250);
+}
+
+.novice {
+    color: #fdad35;
+}
+
+.proficient {
+    color: #35fd72;
+}
+
+.expert {
+    color: #35bdfd;
+}
+
+.skills {
+    background-color: rgb(47, 47, 53) !important;
+}

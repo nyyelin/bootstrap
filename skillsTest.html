@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/skillsTest.css">
+    <link rel="stylesheet" href="aos/aos.css">
+    <script src="plotly/plotly-latest.min.js"></script>
+    <title>Skills Assessments</title>
+</head>
+<style>
+    @font-face {
+        font-family: "titles";
+        src: url(pro-font/Delius/Delius-Regular.ttf);
+    }
+    @font-face {
+        font-family: "poppin";
+        src: url(pro-font/Poppins/Poppins-Regular.ttf);
+    }
+    body {
+        font-family: poppin;
+
+    }
+</style>
+<body>
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top
+" style="background-color: #20202cf0;opacity: 0.9">
+        <div class="container-fluid">
+            <div class="logo text-uppercase">
+				<span><a href="index.html" style="font-family: titles;font-size: 2rem" class="text-white title text-decoration-none"
+                >PUREINSIGHT</a></span>
+            </div>
+            <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#mynav">
+                <span class="navbar-toggler-icon" id="nav"></span>
+            </button>
+
+            <!-- Sub Nav -->
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="unst navbar-nav ml-auto text-uppercase py-2">
+
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white mx-3">Home</a></li>
+
+                    <li class="nav-item"><a href="member.html" class="nav-link text-white mx-3">About</a></li>
+
+                    <li class="nav-item">
+                        <!-- Dropdown Menu -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                Course</button>
+
+                            <div class="dropdown-menu bg-dark text-white">
+                                <a class="dropdown-item bg-dark text-white" href="learninghtml.html">HTML</a>
+                                <a class="dropdown-item bg-dark  text-white" href="learningcss.html">CSS</a>
+                                <a class="dropdown-item bg-dark text-white" href="#">Bootstrap</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item bg-dark text-white" href="#">JavaScript</a>
+                                <a class="dropdown-item bg-dark text-white" href="#">Jquery</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="skillsTest.html" class="nav-link text-white login mx-3">Analytic</a></li>
+
+                    <li class="nav-item"><a href="signup.html" class="btn btn-outline-danger nav-link text-white login mx-3">Sign
+                        Up</a></li>
+
+                </ul>
+            </div>
+        </div><!-- Container -->
+    </nav>
+    
+        <!--nav end-->
+
+    <div class="skills container-fluid  pt-4">
+        <div class="row" style="padding-top: 50px">
+            <div class="col mb-3">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <span class="navbar-brand mb-0 h1">Analytics</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link myunderline skills">Skills <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row text-center text-light">
+            <div class="col-md-3 col-sm-12 text-left p-5">
+                <p class="display-4 usrname w-75 text-center mt-n5">-</p>
+                <hr>
+                <p class="h5">View skill proficiency across your team</p>
+                <p class="text-muted text-light">Updated at <span class="time"></span></p>
+                <hr>
+                <h6 class="text-muted">What are Skills Analytics?</h6>
+                <p class="text-light text-muted">This report presents aggregated data from skill assessments taken by
+                    our test system.</p>
+                <hr>
+                <p class="h6 text-muted">Still have questions?</p>
+                <p class="text-muted">Ask <a href="https://www.facebook.com/profile.php?id=100008438893485"
+                        class="mylink">Professional</a></p>
+                <hr>
+                <button class="btn btn-outline-warning mx-auto take-again">Take Accessment Again</button>
+            </div>
+            <div class="col">
+                <div class="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <p>SKILLS ASSESSED</p>
+                        <p class="display-4"><span class="skill-assessed">-</span></p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <p>ASSESSMENTS TAKEN</p>
+                        <p class="display-4 assessments-taken">5</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <p>STRONGEST SKILL</p>
+                        <p class="display-4 strongest-skill">HTML</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                    <div class="col-12 mt-3">
+                        <div id="chart">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                    <div class="col-12 table-responsive">
+                        <p class="display-4 mb-5 myunderline d-inline">Progress</p>
+                        <table class="table table-dark table-hover mt-5">
+                            <thead class="text-muted">
+                                <tr>
+                                    <th>SKILLS</th>
+                                    <th>AVG SKILL</th>
+                                    <th>SKILL LEVEL</th>
+                                    <th>LOWEST SCORE</th>
+                                    <th>HIGHEST SCORE</th>
+                                    <th>ASSESSMENTS TAKEN</th>
+                                </tr>
+                            </thead>
+                            <tbody class="avg-table">
+                                <tr>
+                                    <td><span class="html">HTML</span></td>
+                                    <td><span class="avg-html">-</span></td>
+                                    <td><span class="lvl-html">-</span></td>
+                                    <td><span class="lowest-html">-</span></td>
+                                    <td><span class="highest-html">-</span></td>
+                                    <td><span class="taken-html">-</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="css">CSS</span></td>
+                                    <td><span class="avg-css">-</span></td>
+                                    <td><span class="lvl-css">-</span></td>
+                                    <td><span class="lowest-css">-</span></td>
+                                    <td><span class="highest-css">-</span></td>
+                                    <td><span class="taken-css">-</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="js">JavaScript</td>
+                                    <td><span class="avg-js">-</span></td>
+                                    <td><span class="lvl-js">-</span></td>
+                                    <td><span class="lowest-js">-</span></td>
+                                    <td><span class="highest-js">-</span></td>
+                                    <td><span class="taken-js">-</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <spna class="jquery">JQuery</span>
+                                    </td>
+                                    <td><span class="avg-jquery">-</span></td>
+                                    <td><span class="lvl-jquery">-</span></td>
+                                    <td><span class="lowest-jquery">-</span></td>
+                                    <td><span class="highest-jquery">-</span></td>
+                                    <td><span class="taken-jquery">-</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="bootstrap">Bootstrap</span></td>
+                                    <td><span class="avg-boot">-</span></td>
+                                    <td><span class="lvl-boot">-</span></td>
+                                    <td><span class="lowest-boot">-</span></td>
+                                    <td><span class="highest-boot">-</span></td>
+                                    <td><span class="taken-boot">-</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Functions.js"></script>
+    <script src="js/skillsTest.js"></script>
+</body>
+
+</html>

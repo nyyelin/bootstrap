@@ -1,0 +1,452 @@
+
+/*common style*/
+body {
+	background-color: #000;
+}
+
+
+.title a{
+	font-family: titles!important;
+	font-size: 30px;
+}
+/*common end*/
+#replies .media-card {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	height: auto;
+	border: 1px solid #555;
+
+}
+#replies .media-card .media-text {
+
+	padding: 15px;
+}
+#replies .media-img {
+	text-align: center;
+}
+
+#replies .media-img img {
+
+	border-radius: 100%;
+	border: 10px solid #f1f1f1;
+	margin-top: -70px;
+}
+
+#replies .media-card:hover img {
+
+	transform: translatex(-20px);
+	transition: width 0.45ms ease-in-out;
+	border: 10px solid #333;
+}
+
+/*#replies .media-card:hover   {*/
+
+	/*transform: translatex(-10px);*/
+	/*transition: width 0.35ms ease-in-out;*/
+/*}*/
+/*what people say end*/
+
+/*
+Banner start
+*/
+#banner {
+	width: auto;
+	height: 650px;
+	position: relative;
+}
+#banner .banner-text {
+	position: absolute;
+	top:20%;
+	left: 12%;
+	right: 32%;
+	color:#fff;
+	width: 30%;
+}
+#banner .banner-text  h2 {
+	font-size: 40px;
+}
+#banner img {
+	width: 100%;
+	height: 100%;
+}
+
+/*
+Banner end
+*/
+
+/*
+service start
+*/
+#service .service-item {
+	height: auto;
+	width: 250px;
+
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+
+}
+
+
+
+#service .service-item .service-img {
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #e83e8c;
+	border-radius: 100%;
+
+}
+
+#service .service-item .service-img>img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#service .service-item .service-info p {
+	margin-bottom: 0;
+}
+/*
+service end
+*/
+
+
+/*modal start*/
+#mymodal .loginModal {
+	margin: 0px;
+	margin: 0px 20px;
+}
+
+.modal {
+
+	top: 67px!important;
+}
+/*modal end*/
+
+/*pricing start*/
+
+#pricing .card .card-header {
+	padding:10px 0px;
+}
+#pricing .card {
+	height: 420px;
+}
+#pricing .card li {
+	margin-bottom: 2px;
+}
+
+/*#pricing .card li:hover {
+	color: cornflowerblue;
+	transform: translatex(-10px);
+	transition: width .35s ease-in-out;;
+}*/
+
+
+
+
+/*pricing end*/
+
+@media (max-width: 411px){
+	#banner {
+		width: auto;
+		height: 600px;
+		position: relative;
+	}
+	#banner .banner-text {
+		position: absolute;
+		top:13%;
+		left: 6%;
+		right: 12%;
+		color:#fff;
+		width: 40%;
+	}
+	#banner .banner-text  h2 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#banner .banner-text  p{
+		font-size: 18px;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/*service info start*/
+	#service .service-item{
+		margin: auto;
+	}
+	#service .service-item .service-info p {
+		font-size: 12px;
+		text-align: center;
+
+	}
+	#service .service-item .service-info h3 {
+		font-size: 14px;
+	}
+	/*service info end*/
+
+	#pricing .card .card-header h2{
+		font-size: 10px;
+		background-color: #333;
+	}
+
+	#pricing .card-item .card {
+		margin-bottom: 30px!important;
+	}
+	/*pricing font	*/
+}
+
+
+@media (max-width: 330px) {
+	#banner {
+		width: auto;
+		height: 600px;
+		position: relative;
+	}
+	#banner .banner-text {
+		position: absolute;
+		top:13%;
+		left: 6%;
+		right: 12%;
+		color:#fff;
+		width: 40%;
+	}
+	#banner .banner-text  h2 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#banner .banner-text  p{
+		font-size: 18px;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/*service info start*/
+	#service .service-item{
+		margin: auto;
+	}
+	#service .service-item .service-info p {
+		font-size: 12px;
+		text-align: center;
+
+	}
+	#service .service-item .service-info h3 {
+		font-size: 14px;
+	}
+	/*service info end*/
+
+	#pricing .card .card-header h2{
+		font-size: 10px;
+		background-color: #333;
+	}
+
+	#pricing .card-item .card {
+		margin-bottom: 30px!important;
+	}
+	/*pricing font	*/
+}
+
+ /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px){
+	#banner {
+		width: auto;
+		height: 600px;
+		position: relative;
+	}
+	#banner .banner-text {
+		position: absolute;
+		top:13%;
+		left: 6%;
+		right: 12%;
+		color:#fff;
+		width: 40%;
+	}
+	#banner .banner-text  h2 {
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#banner .banner-text  p{
+		font-size: 15px;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/*service info start*/
+	#service .service-item{
+		margin: auto;
+	}
+	#service .service-item .service-info p {
+		font-size: 12px;
+		text-align: center;
+
+	}
+	#service .service-item .service-info h3 {
+		font-size: 14px;
+	}
+	/*service info end*/
+
+	#pricing .card .card-header h2{
+		font-size: 10px;
+		background-color: #333;
+	}
+
+	#pricing .card-item .card {
+		margin-bottom: 30px!important;
+	}
+	/*pricing font	*/
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#banner {
+		height: 400px!important;
+	}
+	#banner .banner-text {
+		position: absolute;
+		top:10%;
+		left: 6%;
+		right: 12%;
+		color:#fff;
+		width: 40%;
+	}
+
+	/*service info start*/
+	#service .service-item .service-info p {
+		font-size: 16px;
+	}
+	#service .service-item .service-info h3{
+		font-size: 20px;
+	}
+	/*service info end*/
+
+
+	/*pricing font start	*/
+	#pricing .card .card-header h2{
+		font-size: 35px;
+
+	}
+
+	#pricing .card .card-header h3{
+		font-size: 30px;
+	}
+
+	#pricing .card .card-body ul li{
+		font-size: 20px;
+
+	}
+
+	#pricing .card .card-footer{
+		background-color: #fff;
+
+	}
+
+
+	/*slider start*/
+	#slider .info1 {
+		padding: 10px 10px;
+	}
+	/*slider end*/
+}
+
+@media (min-width: 330px) {
+	#banner .banner-text h2 {
+		font-size: 34px;
+		font-weight: bold;
+	}
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#banner .banner-text {
+		position: absolute;
+		top:20%;
+		left: 6%;
+		right: 12%;
+		color:#fff;
+		width: 40%;
+	}
+
+	/*#slider .info1 span h2 {*/
+		/*font-size:30px;*/
+	/*}*/
+	#slider .info1 p{
+		font-size:13px;
+	}
+
+
+
+	/*service info start*/
+	#service .service-item .service-info p {
+		font-size: 17px;
+	}
+	#service .service-item .service-info h3{
+		font-size: 20px;
+	}
+	/*service info end*/
+
+	/*pricing font start	*/
+	#pricing .card .card-header h2{
+		font-size: 25px;
+
+	}
+
+	#pricing .card .card-body ul li{
+		font-size: 14px;
+
+	}
+	/*pricing font end	*/
+
+	/*people replies start*/
+	#replies .reply {
+		max-width: 46%!important;
+	}
+	/*people replies end*/
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#banner {
+		width: auto;
+		height: 600px;
+		position: relative;
+	}
+	#banner .banner-text {
+		position: absolute;
+		top:30%;
+		left: 6%;
+		right: 12%;
+		color:#fff;
+		width: 40%;
+	}
+	#banner .banner-text  h2 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	#banner .banner-text  p{
+		font-size: 15px;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+
+
+/*language slide start*/
+#carouselExampleControls .card .card-body {
+	padding:0px 0.8rem 0.3rem 0.8rem;
+}
+/*language slide end*/

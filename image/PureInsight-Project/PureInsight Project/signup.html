@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up Form</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<style type="text/css">
+			body {
+				background: #000;
+				color: #fff;
+			}
+		</style>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#credit-form').hide();
+
+				$('#btn-form').click(function(){
+					$('#credit-form').show();
+					$('#login-form').hide();
+				})
+			})
+		</script>
+
+
+	</head>
+	<body>
+		<!-- Form -->
+		<div class="container" id="login-form" style="width: 50%">
+			<div class="row my-4">
+				<div class="col-md-12">
+					<form action="" method="">
+						<div class="form-group">
+							<label>Username</label>
+							<input type="text" name="username" placeholder="Username!" class="form-control" required="">
+						</div>
+
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="Your Email!" class="form-control" required="">
+						</div>
+
+						<div class="form-group">
+							<label>Password</label>
+							<input type="password" name="Password" class="form-control form-control-sm"><!-- form-control-sm -lg -md -->
+						</div>
+
+     					<div class="form-group form-inline">
+						    <label for="choose_level">You are</label>
+						    <select class="form-control mx-1" id="choose_level">
+						      <option>Beginner</option>
+						      <option>Intermediate</option>
+						      <option>Advance</option>
+						    </select>
+						  </div>
+
+						<div class="form-group">
+							<input type="submit" id="btn-form" name="btnsubmit" class="btn btn-success btn-block" value="Login">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- container -->
+
+		<!-- Credit Card -->
+		<div class="container" id="credit-form" style="width: 50%">
+			<div class="row my-3">
+				<div class="col-md-12">
+					<form action="" method="">
+
+						<!-- Credit Card Name -->
+						<div class="form-group">
+							<label>Name on card*</label>
+							<input type="text" name="username" class="form-control" required="">
+						</div>
+
+						<!-- Credit Card Number -->
+						<div class="form-group">
+							<label>Card Number</label>
+							<input type="password" name="number" placeholder="**** **** **** **** ****" class="form-control form-control-sm"><!-- form-control-sm -lg -md -->
+						</div>
+
+						<!-- CVV number -->
+						<div class="form-group">
+							<label>CVV</label>
+							<input type="password" name="CVV" required="">
+						</div>
+
+						<!-- Choose Expire Date -->
+     					<div class="form-group">
+     						<label for="choose_month">Choose Expire Date</label>
+     						<br>
+						    <select class="mx-1" id="choose_month">
+						      <option>January</option>
+						      <option>February</option>
+						      <option>March</option>
+						      <option>April</option>
+						      <option>May</option>
+						      <option>June</option>
+						      <option>July</option>
+						      <option>August</option>
+						      <option>September</option>
+						      <option>October</option>
+						      <option>November</option>
+						      <option>December</option>
+						    </select>
+
+						    <select class="mx-1" id="choose_month">
+						      <option>2010</option>
+						      <option>2011</option>
+						      <option>2012</option>
+						      <option>2013</option>
+						      <option>2014</option>
+						      <option>2015</option>
+						      <option>2016</option>
+						      <option>2017</option>
+						      <option>2018</option>
+						      <option>2019</option>
+						      <option>2020</option>
+						      <option>2021</option>
+						    </select>
+						</div>
+
+						<div class="form-group">
+							<input type="submit" name="btnsubmit" class="btn btn-warning btn-block" value="Confrim">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- container credit card-->	
+	</body>
+</html>
+
+

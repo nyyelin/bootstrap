@@ -1,0 +1,113 @@
+.myunderline {
+    border-bottom: 2px solid rgb(236, 130, 44);
+    transition-property: color;
+    transition-delay: 0.1s;
+}
+
+.myunderline:hover {
+    cursor: default;
+    color: rgb(219, 216, 216) !important;
+}
+
+.mylink {
+    color: rgb(236, 130, 44);
+}
+
+.mylink:hover {
+    color: rgb(236, 130, 44);
+}
+
+.html {
+    color: rgb(250, 98, 98);
+}
+
+.css {
+    color: rgb(98, 245, 250);
+}
+
+.js {
+    color: rgb(250, 227, 98);
+}
+
+.jquery {
+    color: rgb(98, 113, 250);
+}
+
+.bootstrap {
+    color: rgb(225, 98, 250);
+}
+
+.novice {
+    color: #fdad35;
+}
+
+.proficient {
+    color: #35fd72;
+}
+
+.expert {
+    color: #35bdfd;
+}
+
+.skills {
+    background-color: rgb(47, 47, 53) !important;
+}
+
+.side-link {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.side-link a {
+    cursor: pointer;
+}
+
+.p-btn {
+    border: 2px solid rgb(172, 164, 164);
+    font-size: 140%;
+    width: 95%;
+    transition-property: border background-color;
+    transition-duration: .3s;
+    text-align: left;
+}
+
+.p-btn:hover {
+    border: 2px solid rgb(70, 65, 65);
+    cursor: pointer;
+}
+
+.nextbtn {
+    color: rgb(110, 106, 106);
+    background-color: #fdc05c;
+    border-color: #fdc05c;
+    font-size: 130%;
+}
+
+.correct-answer {
+    background-color: #3fe266;
+    color: #fff;
+    border-radius: .3em;
+    border-color: #fff;
+    transition-property: border background-color;
+    transition-duration: .3s;
+}
+
+.correct-answer:hover {
+    border: 2px solid #3fe266;
+    color: #fff;
+}
+
+.wrong-answer {
+    background-color: #f54646;
+    color: #fff;
+    border-color: #fff;
+    border-radius: .3em;
+    transition-property: border background-color;
+    transition-duration: .3s;
+}
+
+.wrong-answer:hover {
+    border: 2px solid #f54646;
+    color: #fff;
+}
+
